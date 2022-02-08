@@ -6,9 +6,9 @@ namespace Exercicio_01
     {
         static void Main(string[] args)
         {
-            double[] altura = new double[5];
+            double[] altura = new double[15];
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 15; i++)
             {
                 Console.WriteLine("Digite a altura da pessoa "+i+":");
                 altura[i] = double.Parse(Console.ReadLine());
@@ -17,7 +17,7 @@ namespace Exercicio_01
             double menorAltura = altura[1];
             double maiorAltura = altura[1];
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 15; i++)
             {
                 if (altura[i] < menorAltura)
                 {
@@ -29,7 +29,6 @@ namespace Exercicio_01
 
             }
             
-
             Console.WriteLine("A menor altura é: "+menorAltura);
             Console.WriteLine("A maior altura é: " + maiorAltura);
 
